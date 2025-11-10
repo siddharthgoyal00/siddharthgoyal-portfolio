@@ -2,14 +2,14 @@ import React from 'react'
 import Header from './components/Header'
 import Section from './components/Section'
 import { CloudIcon, DbIcon, JsIcon, NodeIcon, ReactIcon } from './components/Icons'
-
+import siddpic from './assets/siddpic.jpg'
 export default function App() {
 	const year = new Date().getFullYear()
 	return (
 		<main className="container-centered">
 			<Header
 				name="Siddharth Goyal"
-				photoUrl="https://via.placeholder.com/180x180.png?text=Your+Photo"
+				photoUrl={siddpic}
 				links={{
 					github: 'https://github.com/yourusername',
 					linkedin: 'https://www.linkedin.com/in/yourusername',
@@ -30,16 +30,13 @@ export default function App() {
 						<div className="text-muted">2024 july - 2024 Dec</div>
 						<div><strong>Full-Stack Developer - Intern </strong> · Softeous Technology  · Built scalable services, led frontend modernization.</div>
 					</li>
-					<li className="grid md:grid-cols-[140px_1fr] gap-4">
-						<div className="text-muted">2021 — 2023</div>
-						<div><strong>Full-Stack Developer</strong> · Company Name · Delivered features across React/Node/Postgres stack.</div>
-					</li>
+					
 				</ul>
 			</Section>
 
 			<Section id="education" title="Education">
 				<ul className="grid gap-2">
-					<li><strong>B.Tech / B.S.</strong> · University Name · 2017 — 2021</li>
+					<li><strong>B.Tech Computer Science and Engineering</strong> · JECRC University · 2022 — 2026</li>
 				</ul>
 			</Section>
 
