@@ -1,0 +1,240 @@
+/* Base */
+:root {
+  --bg: #0b0c10;
+  --text: #e5e7eb;
+  --muted: #9aa0a6;
+  --card: #111217;
+  --accent: #64ffda;
+  --border: #1f2937;
+  --shadow: 0 10px 30px -15px rgba(0,0,0,0.6);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+}
+h2 {
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  color: var(--accent);
+}
+h3 {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+}
+
+/* Layout - centered with huge side padding */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-inline: clamp(2rem, 10vw, 10rem);
+  padding-block: 2rem 4rem;
+}
+
+.section {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Header */
+.header {
+  margin-top: 1rem;
+}
+
+.identity {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.name-and-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.name {
+  letter-spacing: 0.5px;
+}
+
+.socials {
+  display: inline-flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.social-link {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+.social-link .icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--text);
+}
+.social-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  background: rgba(100, 255, 218, 0.06);
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* Lists */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.timeline .row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+}
+.timeline .left {
+  color: var(--muted);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+}
+.skill-icon .icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--text);
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (max-width: 720px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* two per row on desktop; stack on small */
+  }
+}
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+.project-card p {
+  color: var(--muted);
+  margin: 0.25rem 0 0.75rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.btn:hover {
+  background: var(--accent);
+  color: #0b0c10;
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+/* Small tweaks */
+@media (max-width: 960px) {
+  .identity {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+  .timeline .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
