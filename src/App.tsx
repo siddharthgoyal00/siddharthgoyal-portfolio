@@ -11,8 +11,8 @@ export default function App() {
 				name="Siddharth Goyal"
 				photoUrl={siddpic}
 				links={{
-					github: 'https://github.com/yourusername',
-					linkedin: 'https://www.linkedin.com/in/yourusername',
+					github: 'https://github.com/siddharthgoyal00',
+					linkedin: 'https://www.linkedin.com/in/siddharth-goyal-847370245/',
 					twitter: 'https://twitter.com/yourusername',
 				}}
 			/>
@@ -27,17 +27,45 @@ export default function App() {
 			<Section id="experience" title="Experience">
 				<ul className="grid gap-3">
 					<li className="grid md:grid-cols-[140px_1fr] gap-4">
-						<div className="text-muted">2024 july - 2024 Dec</div>
-						<div><strong>Full-Stack Developer - Intern </strong> · Softeous Technology  · Built scalable services, led frontend modernization.</div>
+						<div className="text-muted">2024 <br /> July - Dec</div>
+						<div><strong>Softeous Technology </strong><br/>
+						         <strong>Full-Stack Developer - Intern </strong> <br/>
+								 <li> - Contributed to their clients project by migrating parts from React.js to Next.js.
+								 </li>
+								 <li>
+									 - Builded core features of their HR-management system (leave management, attendance management, etc.)
+								 </li>
+								 </div>
 					</li>
 					
 				</ul>
 			</Section>
 
 			<Section id="education" title="Education">
-				<ul className="grid gap-2">
-					<li><strong>B.Tech Computer Science and Engineering</strong> · JECRC University · 2022 — 2026</li>
-				</ul>
+			<ul className="grid gap-3">
+					<li className="grid md:grid-cols-[140px_1fr] gap-4">
+						<div className="text-muted">2022 - 2026</div>
+						<div>
+							<strong>
+							JECRC University
+							</strong> <br /> 
+							B-Tech Computer Science and Engineering| 7.77 GPA 
+						</div>
+					</li>
+					
+			</ul>
+			<ul className="grid gap-3">
+					<li className="grid md:grid-cols-[140px_1fr] gap-4">
+						<div className="text-muted">2020 - 2021</div>
+						<div>
+							<strong>
+							M.N. Modern Public School
+							</strong> <br /> 
+							Senior Secondary | 91.60 %
+						</div>
+					</li>
+					
+			</ul>
 			</Section>
 
 			<Section id="skills" title="Skills">
@@ -45,44 +73,48 @@ export default function App() {
 					<li className="card px-3 py-2 flex items-center gap-2"><JsIcon className="icon" /><span>JavaScript</span></li>
 					<li className="card px-3 py-2 flex items-center gap-2"><ReactIcon className="icon" /><span>React</span></li>
 					<li className="card px-3 py-2 flex items-center gap-2"><NodeIcon className="icon" /><span>Node.js</span></li>
-					<li className="card px-3 py-2 flex items-center gap-2"><DbIcon className="icon" /><span>Databases</span></li>
-					<li className="card px-3 py-2 flex items-center gap-2"><CloudIcon className="icon" /><span>Cloud</span></li>
+					<li className="card px-3 py-2 flex items-center gap-2"><DbIcon className="icon" /><span>TypeScript</span></li>
+					<li className="card px-3 py-2 flex items-center gap-2"><CloudIcon className="icon" /><span>Next.js</span></li>
+					<li className="card px-3 py-2 flex items-center gap-2"><CloudIcon className="icon" /><span>PostgreSQL</span></li>
+					<li className="card px-3 py-2 flex items-center gap-2"><CloudIcon className="icon" /><span>MongoDB</span></li>
+					<li className="card px-3 py-2 flex items-center gap-2"><CloudIcon className="icon" /><span>Express.js</span></li>
+					<li className="card px-3 py-2 flex items-center gap-2"><CloudIcon className="icon" /><span>tRPC</span></li>
 				</ul>
 			</Section>
 
 			<Section id="projects" title="Projects">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
 					<article className="card p-4">
-						<h3 className="text-lg">Project One</h3>
-						<p className="text-muted mt-1 mb-3">A concise description of the project, stack, and outcomes.</p>
-						<a className="btn" href="#" target="_blank" rel="noreferrer noopener">View Project</a>
+						<h3 className="text-lg">Vaplier</h3>
+						<p className="text-muted mt-1 mb-3">low Code No Code AI Workflow Automation platform </p>
+						<a className="btn" href="https://github.com/siddharthgoyal00/vaplier" target="_blank" rel="noreferrer noopener">GitHub</a>
 					</article>
 					<article className="card p-4">
-						<h3 className="text-lg">Project Two</h3>
-						<p className="text-muted mt-1 mb-3">A concise description of the project, stack, and outcomes.</p>
-						<a className="btn" href="#" target="_blank" rel="noreferrer noopener">View Project</a>
+						<h3 className="text-lg">juggleDocs</h3>
+						<p className="text-muted mt-1 mb-3">AI Powered Document Query Platform. Where Users can Query the Uploaded Document </p>
+						<a className="btn" href="https://github.com/siddharthgoyal00/juggledocs" target="_blank" rel="noreferrer noopener">GitHub</a>
 					</article>
 					<article className="card p-4">
-						<h3 className="text-lg">Project Three</h3>
-						<p className="text-muted mt-1 mb-3">A concise description of the project, stack, and outcomes.</p>
-						<a className="btn" href="#" target="_blank" rel="noreferrer noopener">View Project</a>
+						<h3 className="text-lg">KaroFreelance</h3>
+						<p className="text-muted mt-1 mb-3">It is a freelance platform</p>
+						<a className="btn" href="https://github.com/siddharthgoyal00/karo_freelance" target="_blank" rel="noreferrer noopener">GitHub</a>
 					</article>
 					<article className="card p-4">
-						<h3 className="text-lg">Project Four</h3>
-						<p className="text-muted mt-1 mb-3">A concise description of the project, stack, and outcomes.</p>
-						<a className="btn" href="#" target="_blank" rel="noreferrer noopener">View Project</a>
+						<h3 className="text-lg">DoneHai</h3>
+						<p className="text-muted mt-1 mb-3">Full-Stack Task Manager Platform where you can assign Daily, Weekly, and Monthly tasks.</p>
+						<a className="btn" href="https://github.com/siddharthgoyal00/DoneHai" target="_blank" rel="noreferrer noopener">GitHub</a>
 					</article>
 				</div>
 			</Section>
 
 			<Section id="contact" title="Connect with me">
 				<p>
-					Email: <a href="mailto:youremail@example.com" className="underline decoration-accent underline-offset-4">youremail@example.com</a>
+					Email: <a href="devsiddharthgoyal@gmail.com" className="underline decoration-accent underline-offset-4">devsiddharthgoyal@gmail.com</a>
 				</p>
 			</Section>
 
 			<footer className="mt-12 text-center text-muted border-t border-border pt-6">
-				<p>© {year} Your Name</p>
+				<p>© {year} SiddharthGoyal</p>
 			</footer>
 		</main>
 	)
